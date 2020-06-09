@@ -5,6 +5,10 @@ Disciplina: Técnicas de Programação
 Alunos: Pedro Pacheco, Victor Huander, Pedro Henrique dos Santos
 
 Definição do modelo:
-O sistema terá como objetivo principal a gestão de um estacionamento, possuindo um cadastro para cada carro que entrar nele,
-uma lista de vagas com posições, podendo ou não receber um carro, e um sistema de pagamento, para apenas carros com status
-de "pago" serem retirados pelos seus donos, que deverão apresentar a identidade e confirmar que seu nome está no cadastro.
+O sistema terá como objetivo principal a gestão de um estacionamento de um prédio comercial que almeja oferecer comodidade 
+para seus clientes mais fiéis. Para a utilização do estacionamento do estabelecimento pela primeira vez, será solicitado
+um cadastro com informações do carro e do cliente. A partir do segundo uso do estacionamento, o sistema começará a armazenar
+a quantidade de vezes que dito cliente estacionou no local, com o intuito de oferecer promoções e descontos futuros. O sistema
+arquivará as posições onde o cliente costuma estacionar, sugerindo, na entrada, algumas opções de vagas disponíveis que se 
+encaixam melhor com o perfil dele. Ao efetuar o pagamento, o status do cliente será modificado no sistema, permitindo
+assim que o mesmo retire o seu veículo do estacionamento.
