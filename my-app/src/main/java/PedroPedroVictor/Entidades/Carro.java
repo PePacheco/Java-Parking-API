@@ -1,4 +1,4 @@
-package PedroPedroVictor;
+package PedroPedroVictor.Entidades;
 
 public class Carro {
     private String cor;

@@ -1,4 +1,4 @@
-package PedroPedroVictor;
+package PedroPedroVictor.Entidades;
 
 public class Vaga {
     private int posicao;

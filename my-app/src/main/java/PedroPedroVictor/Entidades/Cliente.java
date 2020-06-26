@@ -1,4 +1,4 @@
-package PedroPedroVictor;
+package PedroPedroVictor.Entidades;
 
 import java.util.*;
 
