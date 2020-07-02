@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F9AA33;
+    font-family: 'Poppins', sans-serif;
+    color: #232F34;
+}
+
+.content {
+    display: block;
+    text-align: center;
+}
+
+.btn-goto {
+    margin: 5em;
+    font-size: xx-large;
+    padding: 1em;
+}
+
+.btn-pay {
+    margin: 3em;
+    font-size: xx-large;
+    padding: 1em;
+}
+
+#title{
+    margin-top: 1em;
+    font-size: 5em;
+}
+
+#paragraph{
+    margin-top: 1em;
+    font-size: 3em;
+}
+
+form input,form label,form button {
+    font-size: 1.5em;
+    margin: 1em;
+    margin-top: 6em;
+}
+
+.btn-cadastro {
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+.form-estacionar {
+    margin-top: 10em;
+    margin-left: 15%;
+    margin-right:35%;
+    width: 50%;
+    text-align: right;
+}
+
+.form-estacionar h1 {
+    font-size: 2.5em;
+}
+
+.form-estacionar input, .form-estacionar label, .form-estacionar button {
+    font-size: 1.5em;
+    margin: 1em;
+} 
+
+label {
+    text-align: right;
+}
+
+.container {
+    font-size: 2em;
+    margin: 3em;
+    margin-bottom: 5em;
+}
