@@ -46,7 +46,7 @@ public class EstacionamentoFachadaRemota {
     }
 
     @CrossOrigin(origins = "*")//"http://localhost")
-    @GetMapping("/todosalunos")
+    @GetMapping("/todosclientes")
     public List<Cliente> getListaClientes(){
         List<Cliente> alunos = servicoCliente.listaDeClientes();
         return alunos;
