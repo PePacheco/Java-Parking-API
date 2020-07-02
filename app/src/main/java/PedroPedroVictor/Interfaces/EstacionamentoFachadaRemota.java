@@ -46,7 +46,7 @@ public class EstacionamentoFachadaRemota {
     }
 
     @CrossOrigin(origins = "*")//"http://localhost")
-    @GetMapping("/todosalunos")
+    @GetMapping("/todosclientes")
     public List<Cliente> getListaClientes(){
         List<Cliente> alunos = servicoCliente.listaDeClientes();
         return alunos;
@@ -73,7 +73,7 @@ public class EstacionamentoFachadaRemota {
 
     @CrossOrigin(origins = "*") 
     @GetMapping("/preco")
-    public double getAprovado(@RequestParam Integer horas){
+    public double getPreco(@RequestParam Integer horas){
         double preco = servicoCliente.precoFinal(horas);
         return preco;
     }
