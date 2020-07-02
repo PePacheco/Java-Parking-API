@@ -71,6 +71,13 @@ public class EstacionamentoFachadaRemota {
         return vagas;
     } 
 
+    @CrossOrigin(origins = "*")//"http://localhost")
+    @GetMapping("/todoscarros")
+    public List<Carro> getListaCarros(){
+        List<Carro> carros = servicoCliente.listaDeCarros();
+        return carros;
+    } 
+
     @CrossOrigin(origins = "*") 
     @GetMapping("/preco")
     public double getPreco(@RequestParam Integer horas){

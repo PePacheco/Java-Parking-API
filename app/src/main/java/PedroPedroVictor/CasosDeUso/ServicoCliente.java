@@ -20,10 +20,14 @@ public class ServicoCliente {
     private Vaga cacheVaga;
     
     @Autowired
-    public ServicoCliente(RepositorioClientes r,  PoliticaCalculoDesconto politicaDesconto) {
+    public ServicoCliente(RepositorioClientes r,  PoliticaCalculoDesconto politicaDesconto, RepositorioVagas v, RepositorioCarros c) {
         this.cadClientes = r;
+        this.cadVagas = v;
+        this.cadCarros = c;
         this.politicaDesconto = politicaDesconto;
         this.cacheCliente = null;
+        this.cacheVaga = null;
+        this.cacheCarro = null;
     }
 
     public double precoFinal(int horas) {
@@ -81,5 +85,10 @@ public class ServicoCliente {
     public List<Vaga> listaDeVagas() {
         List<Vaga> vagas = cadVagas.findAll();
         return vagas;
+    }
+
+    public List<Carro> listaDeCarros() {
+        List<Carro> carros = cadCarros.findAll();
+        return carros;
     }
 }

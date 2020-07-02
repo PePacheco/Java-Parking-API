@@ -18,6 +18,10 @@ public class Vaga {
         this.ocupada = false;
     }
 
+    public Vaga() {
+        
+    }
+
     public boolean estacionarCarro(Integer rg) {
         if(!this.isOcupada()) {
             this.rg = rg;

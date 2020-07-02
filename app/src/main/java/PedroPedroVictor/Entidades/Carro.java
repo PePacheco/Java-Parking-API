@@ -14,6 +14,9 @@ public class Carro {
     private String marca;
     private String placa;
     
+    public Carro() {
+        
+    }
 
     public Carro(Integer rg, String c, String m, String p) {
         this.rg = rg;

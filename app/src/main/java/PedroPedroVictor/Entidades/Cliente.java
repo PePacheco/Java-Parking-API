@@ -26,6 +26,10 @@ public class Cliente {
         vagas = new ArrayList<Integer>();
     }
 
+    public Cliente() {
+        
+    }
+
     public boolean estacionar(Vaga v) {
         if(v.estacionarCarro(this.rg)) {
             this.vagas.add(v.getPosicao());
