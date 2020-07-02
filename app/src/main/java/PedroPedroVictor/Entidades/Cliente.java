@@ -26,17 +26,12 @@ public class Cliente {
         vagas = new ArrayList<Integer>();
     }
 
-    public boolean estacionar(Integer v, Integer p) {
-        if(this.rg != null){
-            Vaga vaga = new Vaga(p,v);
-            if(vaga.estacionarCarro(this.rg)) {
-                this.vagas.add(v);
-                this.atualizaVagasPreferidas();
-                this.quant++;
-                return true;
-            } else {
-                return false;
-            }
+    public boolean estacionar(Vaga v) {
+        if(v.estacionarCarro(this.rg)) {
+            this.vagas.add(v.getPosicao());
+            this.atualizaVagasPreferidas();
+            this.quant++;
+            return true;
         } else {
             return false;
         }

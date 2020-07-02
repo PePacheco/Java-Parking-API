@@ -13,10 +13,9 @@ public class Vaga {
     private boolean ocupada;
     private Integer rg;
 
-    public Vaga(Integer p, Integer r) {
+    public Vaga(Integer p) {
         this.posicao = p;
         this.ocupada = false;
-        this.rg = r;
     }
 
     public boolean estacionarCarro(Integer rg) {
